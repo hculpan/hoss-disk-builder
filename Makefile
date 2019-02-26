@@ -10,7 +10,7 @@ CC = gcc
 all: hdb
 
 run: all
-	./hdb
+	./hdb ${params}
 
 hdb: ${OBJ}
 	${CC} -o hdb $^ -L/usr/lib
