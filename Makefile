@@ -22,3 +22,5 @@ clean:
 	rm -fr hdb
 	rm -fr src/*.o 
 
+install: all
+	sudo cp ./hdb /usr/local/bin
